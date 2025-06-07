@@ -9,7 +9,7 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+app.use(cors({ origin: "https://stock-tracker-frontend-eight.vercel.app", credentials: true }));
 app.use(express.json());
 
 mongoose
